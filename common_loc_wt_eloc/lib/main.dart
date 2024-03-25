@@ -1,6 +1,5 @@
-import 'package:common_loc_wt_eloc/generated/locale_keys.g.dart';
+import 'package:common_loc_wt_eloc/presentation/translations/locale_keys.g.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 void main() async {
@@ -8,10 +7,10 @@ void main() async {
   await EasyLocalization.ensureInitialized();
 
   runApp(EasyLocalization(
-      supportedLocales: [Locale('en'), Locale('ko')],
+      supportedLocales: const [Locale('en'), Locale('ko')],
       path: "assets/translations/",
-      fallbackLocale: Locale("en"),
-      child: MyApp()));
+      fallbackLocale: const Locale("en"),
+      child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -71,14 +70,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             OutlinedButton(
                 onPressed: () {
-                  context.setLocale(Locale("ko"));
+                  context.setLocale(const Locale("ko"));
                 },
-                child: Text("한국어 전환")),
+                child: const Text("한국어 전환")),
             OutlinedButton(
                 onPressed: () {
-                  context.setLocale(Locale("en"));
+                  context.setLocale(const Locale("en"));
                 },
-                child: Text("Change to English")),
+                child: const Text("Change to English")),
           ],
         ),
       ),

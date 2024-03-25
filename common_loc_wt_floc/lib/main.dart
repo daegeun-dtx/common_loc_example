@@ -1,4 +1,4 @@
-import 'package:common_loc_wt_floc/generated/locale_keys.g.dart';
+import 'package:common_loc_wt_floc/presentation/translations/locale_keys.g.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart';
@@ -96,14 +96,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             OutlinedButton(
                 onPressed: () {
-                  widget.setLocale(Locale.fromSubtags(languageCode: "ko"));
+                  widget.setLocale(const Locale.fromSubtags(languageCode: "ko"));
                 },
-                child: Text("한국어 전환")),
+                child: const Text("한국어 전환")),
             OutlinedButton(
                 onPressed: () {
-                  widget.setLocale(Locale.fromSubtags(languageCode: "en"));
+                  widget.setLocale(const Locale.fromSubtags(languageCode: "en"));
                 },
-                child: Text("Change to English")),
+                child: const Text("Change to English")),
           ],
         ),
       ),

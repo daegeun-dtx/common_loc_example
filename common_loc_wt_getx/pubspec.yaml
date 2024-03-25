@@ -33,13 +33,13 @@ dependencies:
 
   salpha_package:
     git:
-      url: https://github.com/sadtx/salpha_package_flutter.git
-      ref: develop
+      url: https://github.com/daegeun-dtx/salpha_package_flutter.git
+      ref: f7b67e895abb4d7b9e4b2f5fecaf06f55389beb9
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  get: ^4.6.5
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:

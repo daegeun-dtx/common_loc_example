@@ -24,7 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "home_title": MessageLookupByLibrary.simpleMessage("플러터 데모 홈페이지"),
         "material_apptitle": MessageLookupByLibrary.simpleMessage("플러터 데모"),
-        "text_times": MessageLookupByLibrary.simpleMessage("요만큼 버튼을 눌렀네요:"),
+        "text_times": MessageLookupByLibrary.simpleMessage("이만큼 버튼을 눌렀네요:"),
         "tooltip_add": MessageLookupByLibrary.simpleMessage("증가")
       };
 }
